@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -25,30 +26,118 @@
             <a href="#"><img src="images/image2.jpg" alt="Logo"></a>
         </div>
         <ul class="menu">
-            <li><a href="#">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="#">TOUR PACKAGES</a></li>
+            <li><a href="tour.html">TOUR PACKAGES</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">SERVICES<i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#">Service 1</a>
-                    <a href="#">Service 2</a>
-                    <a href="#">Service 3</a>
+                    <a href="car.html">CAR RENTAL</a>
+                    <a href="hotel.html">HOTEL BOOKING</a>
+                    <a href="flight.html">FLIGHT TICKET BOOKING</a>
+                    <a href="train.html">TRAIN TICKET BOOKING</a>
                 </div>
             </li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
         </ul>
         <div class="hamburger">
-            <i class="fas fa-bars"></i>
+            <h3>MENU</h3>
+           <i class="fas fa-bars"></i>
         </div>
     </nav>
+
     <div class="banner">
         <div class="banner-content">
             <h1>ABOUT US</h1>
         </div>
     </div>
-    <style>
 
+    <main>
+        <section>
+            <h1>ABOUT NAMO NEPAL TRIP</h1>
+            <p>Travelling is a treatment of soul-and this is the very thing we trust in. Conveying a monstrously productive involvement with planning the fluctuated recollections for the lifetime, Namo Nepal Trip is went with a skill and is likewise considered among the main administrators for one of the Nepal Tour Operator. We have been taking care of the countless the travel industry administrations for the explorers who are endeavoring to be worked with the absolute best undertaking encounters during their excursion. Working with the sole expectation of ‘dealing with the clients with a grin’, Namo Nepal Trip has never neglected to stand antiquely out of the stuffed and profoundly serious market.
+
+                Not at all like others, we put stock in computing our prosperity rate by the quantity of our good clients and as our proverb goes-‘We care for yourself and need to sew a variety of recollections for you from our planned excursion’. Mr. Ayush Chauhan-the mariner of our boat and without whom Namo Nepal Trip wasn’t even imaginable is a prominent expert in voyaging and is in similar field from the beyond 21 years.</p>
+        </section>
+
+        <section class="value-section">
+            <h2>We Value Your Expectations</h2>
+            
+            <div class="card">
+                <img src="icon1.png" alt="Icon 1">
+                <h3>Card Heading 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit tortor id ex lacinia.</p>
+            </div>
+
+            <div class="card">
+                <img src="icon2.png" alt="Icon 2">
+                <h3>Card Heading 2</h3>
+                <p>Phasellus non efficitur justo. Duis porttitor ultricies lorem, id lacinia metus semper vel.</p>
+            </div>
+
+            <div class="card">
+                <img src="icon3.png" alt="Icon 3">
+                <h3>Card Heading 3</h3>
+                <p>Integer dapibus augue nec nisi fringilla, vitae vehicula purus tincidunt.</p>
+            </div>
+        </section>
+    </main>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h2>About Us</h2>
+            <p>Experience Nepal’s stunning natural beauty with our private & customized Tour Packages. Book your Nepal Tour. Visit Popular Places – Kathmandu, Pokhara, Chitwan & more.</p>
+        </div>
+        <div class="footer-column">
+            <h2>Popular Tours</h2>
+            <ul>
+                <li>Tour 1</li>
+                <li>Tour 2</li>
+                <li>Tour 3</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Get in Touch</h2>
+            <p>Address: 123 Street, City, Country</p>
+            <p>Phone: +1234567890</p>
+        </div>
+        <div class="footer-column">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Namo Nepal Trip | Designed By MARGWEB</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-icons">
+        <a href="https://wa.me/YOUR_NUMBER" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div>
+        <a href="your-request-url" class="request-tag" target="_blank">
+            REQUEST A CALL BACK
+        </a>
+    </div>
+
+    <div class="message-icon">
+        <i class="fas fa-comment"></i>
+    </div>
+
+
+
+
+<style>
 .tag-strip {
     display: flex;
     justify-content: space-between;
@@ -224,7 +313,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
 }
@@ -242,6 +331,257 @@
        text-align: center;
     }
  }
+
+ section {
+    background-color:white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+section h1 {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    text-decoration: underline ;
+}
+
+section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.value-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.value-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    width: calc(29.33% - 35px);
+    text-align: left;
+}
+
+.card img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ /* footer CSS  */
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer h2{
+    color: #f15722;
+}
+
+.footer p{
+    line-height: 25px;
+}
+
+.footer-column {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h2 {
+    margin-top: 0;
+}
+
+.footer-column li{
+    line-height: 30px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    background-color: #e46435;
+    width: 100%;
+    height: 70px ;
+    padding:0
+}
+
+.footer-bottom p{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-bottom p span{
+    color: blue;
+}
+
+.footer-bottom :hover{
+    cursor: pointer;
+    text-decoration:solid;
+}
+
+/* Adjust the icon size if necessary */
+.social-icons i {
+    font-size: 24px;
+}
+
+/* Media query for smaller screens */
+@media (min-width: 768px) {
+    .footer {
+        padding: 30px 0; /* Reset padding for larger screens */
+    }
+    
+    .footer-column {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 0; /* Remove margin for larger screens */
+    }
+}
+
+.message-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.message-icon i {
+    font-size: 24px;
+}
+
+.message-icon:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Styles for Message Form */
+.message-form {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+}
+
+.message-form .send-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-form .send-button:hover {
+    background-color: #0056b3;
+}
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #25D366; /* WhatsApp green color */
+    z-index: 1000;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    background-color: #4b9b37;
+}
+
+.request-tag {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: right center;
+    background-color: #cec137;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.request-tag:hover {
+    background-color: #0056b3;
+    transform: translateY(-50%) rotate(90deg) scale(1.1);
+}
  </style>
      <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -269,6 +609,24 @@
                     content.style.display = 'none';
                 });
                 dropdownContent.style.display = 'block';
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const messageIcon = document.querySelector('.message-icon');
+        const messageForm = document.createElement('div');
+        messageForm.classList.add('message-form');
+        messageForm.innerHTML = `
+            <textarea placeholder="Type your message..."></textarea>
+            <button class="send-button">Send</button>
+        `;
+        document.body.appendChild(messageForm);
+
+        messageIcon.addEventListener('click', function() {
+            if (messageForm.style.display === 'none' || !messageForm.style.display) {
+                messageForm.style.display = 'block';
+            } else {
+                messageForm.style.display = 'none';
             }
         });
     });
