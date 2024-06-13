@@ -31,7 +31,7 @@ body {
 
 .social-icons a:hover {
     color: #ddd;
-}
+} 
 
 @media (max-width: 767px) {
    .tag-strip{
