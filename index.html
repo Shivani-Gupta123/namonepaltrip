@@ -290,7 +290,7 @@
                 <a href="#" class="button whatsapp">WhatsApp</a>
             </div>
             <div class="video-card">
-                <h3>Watch Our Video</h3>
+                <p>Experience Nepal’s stunning natural beauty with our private & customized Tour Packages. Book your Nepal Tour. Visit Popular Places – Kathmandu, Pokhara, Chitwan & more.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -329,6 +329,22 @@
             <p>© 2023 Namo Nepal Trip | Designed By MARGWEB</p>
         </div>
     </footer>
+
+    <div class="whatsapp-icons">
+        <a href="https://wa.me/YOUR_NUMBER" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div>
+        <a href="your-request-url" class="request-tag" target="_blank">
+            REQUEST A CALL BACK
+        </a>
+    </div>
+
+    <div class="message-icon">
+        <i class="fas fa-comment"></i>
+    </div>
 
     <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -373,6 +389,25 @@ document.querySelectorAll('.filter span').forEach(filter => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+        const messageIcon = document.querySelector('.message-icon');
+        const messageForm = document.createElement('div');
+        messageForm.classList.add('message-form');
+        messageForm.innerHTML = `
+            <textarea placeholder="Type your message..."></textarea>
+            <button class="send-button">Send</button>
+        `;
+        document.body.appendChild(messageForm);
+
+        messageIcon.addEventListener('click', function() {
+            if (messageForm.style.display === 'none' || !messageForm.style.display) {
+                messageForm.style.display = 'block';
+            } else {
+                messageForm.style.display = 'none';
+            }
+        });
+    });
 </script>
 </body>
 </html>
