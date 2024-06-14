@@ -3,58 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Namonepaltrip</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Top Bar -->
     <div class="tag-strip">
         <div class="contact-details">
-            <p><i class="fas fa-phone"></i> +123 456 7890 | <i class="fas fa-envelope"></i> email@example.com  <i class="fas fa-arrow-right"></i>GST: 09JSFJ45</p>
+            <p>
+                <a><i class="fas fa-phone"></i> +123 456 7890 </a>
+                <a><i class="fas fa-envelope"></i> email@example.com</a>  
+                <a><i class="fas fa-arrow-right"></i> GST: 09JSFJ45</a>
+            </p>
         </div>
         <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+            <a href="#" target="_blank" class="pinterest"><i class="fa fa-pinterest"></i></a>
         </div>
     </div>
-<!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#"><img src="images/image2.jpg" alt="Logo"></a>
+    
+    
+    <!-- Navbar -->
+        <nav class="navbar" >
+            <div class="logo">
+                <a href="/"><img src="images/image2.jpg" alt="Logo"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="tour.html">TOUR PACKAGES</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">SERVICES<i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">CAR RENTAL</a>
+                        <a href="#">HOTEL BOOKING</a>
+                        <a href="#">FLIGHT TICKET BOOKING</a>
+                        <a href="#">TRAIN TICKET BOOKING</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        
+    
+        <div class="banner">
+            <div class="banner-content">
+                <h1>ABOUT US</h1>
+            </div>
         </div>
-        <ul class="menu">
-            <li><a href="/">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="tour.html">TOUR PACKAGES</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">SERVICES<i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="car.html">CAR RENTAL</a>
-                    <a href="hotel.html">HOTEL BOOKING</a>
-                    <a href="flight.html">FLIGHT TICKET BOOKING</a>
-                    <a href="train.html">TRAIN TICKET BOOKING</a>
-                </div>
-            </li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-        <div class="hamburger">
-            <h3>MENU</h3>
-           <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-
-    <div class="banner">
-        <div class="banner-content">
-            <h1>ABOUT US</h1>
-        </div>
-    </div>
+    
 
     <main>
-        <section>
+        <section class="about">
             <h1>ABOUT NAMO NEPAL TRIP</h1>
+            <hr>
             <p>Travelling is a treatment of soul-and this is the very thing we trust in. Conveying a monstrously productive involvement with planning the fluctuated recollections for the lifetime, Namo Nepal Trip is went with a skill and is likewise considered among the main administrators for one of the Nepal Tour Operator. We have been taking care of the countless the travel industry administrations for the explorers who are endeavoring to be worked with the absolute best undertaking encounters during their excursion. Working with the sole expectation of ‘dealing with the clients with a grin’, Namo Nepal Trip has never neglected to stand antiquely out of the stuffed and profoundly serious market.
 
                 Not at all like others, we put stock in computing our prosperity rate by the quantity of our good clients and as our proverb goes-‘We care for yourself and need to sew a variety of recollections for you from our planned excursion’. Mr. Ayush Chauhan-the mariner of our boat and without whom Namo Nepal Trip wasn’t even imaginable is a prominent expert in voyaging and is in similar field from the beyond 21 years.</p>
@@ -62,25 +71,33 @@
 
         <section class="value-section">
             <h2>We Value Your Expectations</h2>
-            
+            <hr>
             <div class="card">
-                <img src="icon1.png" alt="Icon 1">
-                <h3>Card Heading 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit tortor id ex lacinia.</p>
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <h1>Work Ethics</h1>
+                <p>We believe in working diligently and cooperatively towards reaching up to your preferences and decisions.</p>
             </div>
 
             <div class="card">
-                <img src="icon2.png" alt="Icon 2">
-                <h3>Card Heading 2</h3>
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <h1>24/7 Customer support</h1>
                 <p>Phasellus non efficitur justo. Duis porttitor ultricies lorem, id lacinia metus semper vel.</p>
             </div>
 
             <div class="card">
-                <img src="icon3.png" alt="Icon 3">
-                <h3>Card Heading 3</h3>
-                <p>Integer dapibus augue nec nisi fringilla, vitae vehicula purus tincidunt.</p>
+                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                <h1>Customer-focused</h1>
+                <p>We promise to perform our best so that you get facilitated with a great experience in Nepal & Muktinath Tour.</p>
             </div>
         </section>
+
+        <div class="social">
+            <hr>
+            <p>Share this:</p>
+            <button><i class="fa fa-facebook-f"></i> Facebook</button>
+            <button><i class="fa fa-twitter"></i> X</button>
+        </div>
+
     </main>
 
     </main>
@@ -138,6 +155,12 @@
 
 
 <style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .tag-strip {
     display: flex;
     justify-content: space-between;
@@ -150,37 +173,71 @@
 
 .contact-details p {
     margin: 0;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 65px; 
 }
 
 .contact-details i {
     margin-right: 5px;
 }
 
-.social-icons a {
-    margin-left: 10px;
-    color: white;
-    text-decoration: none;
-    height: 6px;
+.social-icons{
+    margin-right: 50px;
 }
 
+.social-icons a {
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 15px; 
+    width: 70px; 
+    height: 60px; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+}
+
+.social-icons a i {
+    font-size: 12px; 
+}
+
+.fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.social-icons a.facebook { background-color: #3b5998; }
+.social-icons a.twitter { background-color: #1da1f2; }
+.social-icons a.instagram { background-color: #e4405f; }
+.social-icons a.youtube { background-color: #ff0000; }
+.social-icons a.pinterest { background-color: #bd081c; }
+
 .social-icons a:hover {
-    color: #ddd;
+    opacity: 0.7; /* Slightly reduces opacity on hover */
 }
 
 @media (max-width: 767px) {
-   .tag-strip{
-    display: none;
-   }
+    .tag-strip {
+        display: none;
+    }
 }
+
+
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Adjust to space between items */
     align-items: center;
     background-color: white;
     padding: 15px 20px;
-    height: 90px;
+    height: 70px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -188,7 +245,8 @@
 }
 
 .navbar .logo img {
-    height: 110px; 
+    height: 95px; 
+    margin-left: 60px;
 }
 
 .navbar .menu {
@@ -203,6 +261,7 @@
 .navbar .menu li {
     position: relative;
     margin-left: 20px;
+    margin-right: 10px;
     font-size: 15px;
     font-weight: 600;
 }
@@ -243,7 +302,7 @@
     color: white;
 }
 
-.navbar .menu li:hover .dropdown-content {
+.navbar .menu li .dropdown-content.show {
     display: block;
 }
 
@@ -269,23 +328,37 @@
 @media (max-width: 768px) {
     .navbar .menu {
         flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 0;
+        position: relative;
+        top: 90px;
+        left: 0;
         background-color: white;
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+    }
+
+    .navbar .logo img{
+        margin-left: 0px;
     }
 
     .navbar .menu.show {
-        max-height: 300px; 
+        max-height: 400px; 
+        position: absolute;
     }
 
     .navbar .menu li {
         margin: 10px 0;
-        text-align: center;
+        place-self: start;
+    }
+
+    .navbar .menu li .dropdown-content {
+        position: static; 
+        min-width: 100%;
+        box-shadow: none;
+    }
+
+    .navbar .menu li .dropdown-content a {
+        padding: 8px 15px; 
     }
 
     .hamburger {
@@ -293,20 +366,24 @@
     }
 }
 
+
+
+
 .banner {
     position: relative;
-    height: 400px; 
-    overflow: hidden;
+    height: 400px;
+    object-fit:cover;
 }
 
 .banner::before {
     content: '';
     position: absolute;
+    bottom: -20%;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/image1.jpg') center/cover repeat;
+    background: url('images/image5.jpeg') center/cover no-repeat;
 }
 
 .banner-content {
@@ -316,23 +393,58 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
 }
 
-.banner-content h1{
-   font-weight: 600;
-   font-size: 40px;
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
- @media (max-width: 768px) {
-    .banner{
+.banner-content h1 {
+    font-weight: 600;
+    font-size: 50px; /* Adjusted for better readability */
+    margin: 0;
+    animation: textGlow 1s infinite alternate;
+}
+
+
+.banner-content p {
+    font-weight: 600;
+    font-size: 24px; /* Adjusted for better readability */
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
         height: 300px;
     }
-    .banner-content{
-       text-align: center;
+    .banner-content h1 {
+        font-size: 40px; /* Adjusted for smaller screens */
     }
- }
+    .banner-content p {
+        font-size: 18px; /* Adjusted for smaller screens */
+    }
+}
 
- section {
+ .about {
     background-color:white;
     padding: 20px;
     margin-bottom: 20px;
@@ -340,16 +452,14 @@
     border-radius: 5px;
 }
 
-section h1 {
+.about h1 {
     color: #333;
     font-size: 34px;
     margin-bottom: 10px;
     text-align: center;
-    padding-bottom: 30px;
-    text-decoration: underline ;
 }
 
-section p {
+.about p {
     color: #666;
     font-size: 16px;
     line-height: 1.6;
@@ -357,6 +467,12 @@ section p {
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.about hr{
+    width: 300px;
+    border: 1px solid;
+    margin-bottom: 30px;
 }
 
 .value-section {
@@ -371,28 +487,34 @@ section p {
     margin-bottom: 20px;
 }
 
+.value-section hr{
+    width: 200px;
+    border: 1px solid;
+    margin-bottom: 30px;
+}
+
 .card {
     background-color: #fff;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: inline-block;
     vertical-align: top;
     width: calc(29.33% - 35px);
+    height: 200px;
     text-align: left;
 }
 
-.card img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
-    margin-bottom: 10px;
+.card i {
+    font-size: 60px;
+    color: #f15722;
 }
 
-.card h3 {
+.card h1 {
     color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 1px;
 }
 
 .card p {
@@ -400,6 +522,37 @@ section p {
     font-size: 16px;
     line-height: 1.6;
 }
+
+@media (max-width:768px){
+    .card{
+        display:grid;
+        grid-template-columns: repeat(1 , 1fr);
+        width: 90%;
+    }
+}
+
+.social hr{
+    border: 1px solid gray;
+    margin-left: 1px;
+    width: 100px;
+    margin-bottom: 2px;
+}
+
+.social p{
+    text-align: left;
+}
+
+.social button{
+   margin-left: 10px;
+   height: 40px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.social .fa{
+    height: 10px;
+}
+
 
  /* footer CSS  */
 .footer{

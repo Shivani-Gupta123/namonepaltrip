@@ -17,7 +17,7 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 65px; /* Adds spacing between items */
+    gap: 65px; 
 }
 
 .contact-details i {
@@ -42,8 +42,17 @@ body {
 }
 
 .social-icons a i {
-    font-size: 12px; /* Adjust icon size */
+    font-size: 12px; 
 }
+
+.fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
 
 .social-icons a.facebook { background-color: #3b5998; }
 .social-icons a.twitter { background-color: #1da1f2; }
