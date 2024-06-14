@@ -65,15 +65,16 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around; /* Adjust to space between items */
+    justify-content: space-between; /* Adjust to space between items */
     align-items: center;
     background-color: white;
     padding: 15px 20px;
     height: 70px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar .logo img {
@@ -158,33 +159,33 @@ body {
 @media (max-width: 768px) {
     .navbar .menu {
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 90px;
-        right: 0;
+        left: 0;
         background-color: white;
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
     }
 
     .navbar .menu.show {
-        max-height: 400px; /* Increase max-height to fit the dropdown */
+        max-height: 400px; 
+        position: absolute;
     }
 
     .navbar .menu li {
         margin: 10px 0;
-        text-align: center;
+        place-self: start;
     }
 
     .navbar .menu li .dropdown-content {
-        position: static; /* Change position to static for mobile */
+        position: static; 
         min-width: 100%;
         box-shadow: none;
     }
 
     .navbar .menu li .dropdown-content a {
-        padding: 8px 15px; /* Adjust padding */
+        padding: 8px 15px; 
     }
 
     .hamburger {
@@ -571,7 +572,7 @@ body {
     }
 
     .destination-info .button{
-        margin-left: 220px;
+        margin-left: 200px;
     }
 }
 
@@ -583,6 +584,7 @@ body {
 
 .popular-packages-section h2 {
     font-size: 36px;
+    text-decoration: underline;
     margin-bottom: 30px;
 }
 
@@ -602,7 +604,7 @@ body {
 }
 
 .package-card img {
-    width: 50%;
+    width: 300px;
     height: 200px;
     border-radius: 10px 10px 0 0;
 }
@@ -624,7 +626,7 @@ body {
 
 .button {
     display: block;
-    width: 100%;
+    width: 50%;
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -639,26 +641,42 @@ body {
 }
 
 @media (max-width: 768px){
+
+    .package-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .package-card{
        display: block;
        width: 100%;
        gap: 20px;
+    }
+
+    .package-card img{
+        height: 300px;
+        width: 500px;
+    }
+
+    .package-card .button{
+        width: 20%;
+        margin-left: 200px;
     }
 }
 
 .stats-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #0E2F44FC;
 }
 
 .stats-item {
     text-align: center;
-    margin: 20px;
-    flex: 1 1 200px; /* Allows flex items to grow and shrink with a minimum width of 200px */
+    margin: 10px;
+    flex: 1 1 200px;
 }
 
 .stats-item img {
@@ -668,25 +686,34 @@ body {
 }
 
 .stats-item h2 {
-    font-size: 24px;
+    font-size: 14px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .stats-item i{
     font-size: 30px;
+    color:#ea5d2e;
 }
 
 .stats-item p {
-    font-size: 18px;
+    font-size: 28px;
+    margin-bottom: 1px;
     font-weight: bold;
-    color: #333;
+    color: white;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
+
+    .stats-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .stats-item {
         flex: 1 1 100%; /* Full width on smaller screens */
         margin: 10px 0;
@@ -697,11 +724,11 @@ body {
     }
 
     .stats-item h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .stats-item p {
-        font-size: 16px;
+        font-size: 36px;
     }
 }
 
@@ -712,10 +739,16 @@ body {
     text-align: center;
 }
 
+.our-services h1{
+    font-size: 30px;
+    text-decoration:underline;
+}
+
 .service-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -723,9 +756,6 @@ body {
     flex: 1;
     max-width: 300px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .service img {
@@ -743,6 +773,15 @@ body {
 .service p {
     font-size: 16px;
     color: #666;
+}
+
+@media (max-width:768px) {
+    .service-row{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        justify-content: center;
+        
+    }
 }
 
 
