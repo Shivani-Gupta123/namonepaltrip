@@ -478,6 +478,12 @@ body {
     }
 }
 
+@media(max-width:480px){
+    .banner-content h1{
+        font-size:15px ;
+    }
+}
+
 .content-section {
     display: flex;
     justify-content: space-between;
@@ -613,26 +619,50 @@ body {
         flex: none;
         width: 100%;
     }
+}
 
-    .navbar .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+@media(max-width:480px){
+    .card1 h3{
+       font-size: 25px;
     }
 
-    .navbar .hamburger {
-        display: block;
+    .card1 p{
+        font-size: 20px;
     }
 
-    .navbar.active .menu {
-        display: flex;
+    .card2{
+        height: 200px;
+    }
+    .card2 img{
+        height: 200px;
+    }
+
+    .card2 h3{
+        font-size: 20px;
+    }
+
+    .card2 li{
+        padding: 5px;
+    }
+
+    .contact-form{
+        margin: 10px;
+    }
+
+    .contact-form input,
+.contact-form textarea {
+    width: calc(100% - 30px);
+}
+
+    .contact-form button{
+        width: 25%;
     }
 }
 
-#map {
+/* #map {
     height: 400px;
     width: 100%;
-}
+} */
 
 .address-card {
     position: absolute;

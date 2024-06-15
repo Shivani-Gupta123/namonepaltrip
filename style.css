@@ -486,6 +486,10 @@ body {
     .our-services-section h2{
         font-size: 30px;
     }
+    
+    .cards{
+       padding: 10px;
+    }
 
     .card img {
         height: 250px;
@@ -707,6 +711,11 @@ body {
 }
 
 @media (max-width: 480px) {
+
+    .package-cards{
+        margin: 5px;
+    }
+
    .package-card img{
     height:250px ;
    }
@@ -964,7 +973,7 @@ body {
     }
 
     .buttons .button {
-        width: 12%;
+        width: 15%;
         padding: 10px;
         margin: -1px;
         font-size: 10px;
