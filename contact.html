@@ -66,20 +66,18 @@
                     <p>This is the content of the first card.</p>
                 </div>
                 <div class="card">
-                    <h3>Card Title 2</h3>
-                    <p>This is the content of the second card.</p>
+                    <img src="" alt="">
+                    
                 </div>
             </div>
             <div class="right-content">
                 <form class="contact-form">
-                    <h3>Contact Us</h3>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    <button type="submit">Submit</button>
+                    <h3>Send a message</h3>
+                    <input type="text" id="name" name="name" placeholder="Name:" required>
+                    <input type="email" id="email" name="email" placeholder="Email:" required>
+                    <input type="number" id="phone" name="phone" placeholder="Phone:" required>
+                    <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    <button type="submit">Submit Now</button>
                 </form>
             </div>
         </section>
@@ -352,7 +350,6 @@ body {
 
 
 
-
 .banner {
     position: relative;
     height: 400px;
@@ -421,7 +418,7 @@ body {
         height: 300px;
     }
     .banner-content h1 {
-        font-size: 40px; /* Adjusted for smaller screens */
+        font-size: 30px; /* Adjusted for smaller screens */
     }
     .banner-content p {
         font-size: 18px; /* Adjusted for smaller screens */
@@ -719,9 +716,16 @@ body {
         });
     });
     
-            document.querySelector('.hamburger').addEventListener('click', () => {
-                document.querySelector('.menu').classList.toggle('show');
-            });
+    document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.menu').classList.toggle('show');
+});
+
+document.querySelectorAll('.dropdown .dropbtn').forEach(dropbtn => {
+    dropbtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropbtn.nextElementSibling.classList.toggle('show');
+    });
+});
     
             document.querySelectorAll('.filter span').forEach(filter => {
         filter.addEventListener('click', () => {
