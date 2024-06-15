@@ -17,7 +17,7 @@
                 <a><i class="fas fa-arrow-right"></i> GST: 09JSFJ45</a>
             </p>
         </div>
-        <div class="social-icons">
+        <div class="social-icon">
             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook-f"></i></a>
             <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -28,29 +28,29 @@
     
     
     <!-- Navbar -->
-        <nav class="navbar" >
-            <div class="logo">
-                <a href="/"><img src="images/image2.jpg" alt="Logo"></a>
-            </div>
-            <ul class="menu">
-                <li><a href="/">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="tour.html">TOUR PACKAGES</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">SERVICES<i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="#">CAR RENTAL</a>
-                        <a href="#">HOTEL BOOKING</a>
-                        <a href="#">FLIGHT TICKET BOOKING</a>
-                        <a href="#">TRAIN TICKET BOOKING</a>
-                    </div>
-                </li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+    <nav class="navbar" >
+        <div class="logo">
+            <a href="/"><img src="images/image2.jpg" alt="Logo"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="/">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="tour.html">TOUR PACKAGES</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">SERVICES<i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">CAR RENTAL</a>
+                    <a href="#">HOTEL BOOKING</a>
+                    <a href="#">FLIGHT TICKET BOOKING</a>
+                    <a href="#">TRAIN TICKET BOOKING</a>
+                </div>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
         
     
         <div class="banner">
@@ -186,19 +186,19 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 65px; 
+    gap: 55px; 
 }
 
 .contact-details i {
     margin-right: 5px;
 }
 
-.social-icons{
-    margin-right: 50px;
+.social-icon{
+    margin:10px
 }
 
-.social-icons a {
-    margin-right: 40px;
+.social-icon a {
+    margin-right: 10px;
     text-decoration: none;
     font-size: 15px; 
     width: 70px; 
@@ -210,12 +210,13 @@ body {
     background-color: transparent;
 }
 
-.social-icons a i {
+.social-icon a i {
     font-size: 12px; 
 }
 
 .fa {
-    padding: 8px;
+    padding: 6px;
+    margin: 2px;
     font-size: 30px;
     width: 10px;
     text-align: center;
@@ -223,13 +224,13 @@ body {
     border-radius: 50%;
   }
 
-.social-icons a.facebook { background-color: #3b5998; }
-.social-icons a.twitter { background-color: #1da1f2; }
-.social-icons a.instagram { background-color: #e4405f; }
-.social-icons a.youtube { background-color: #ff0000; }
-.social-icons a.pinterest { background-color: #bd081c; }
+.social-icon a.facebook { background-color: #3b5998; }
+.social-icon a.twitter { background-color: #1da1f2; }
+.social-icon a.instagram { background-color: #e4405f; }
+.social-icon a.youtube { background-color: #ff0000; }
+.social-icon a.pinterest { background-color: #bd081c; }
 
-.social-icons a:hover {
+.social-icon a:hover {
     opacity: 0.7; /* Slightly reduces opacity on hover */
 }
 
@@ -238,7 +239,6 @@ body {
         display: none;
     }
 }
-
 
 
 .navbar {
@@ -378,7 +378,6 @@ body {
 }
 
 
-
 .banner {
     position: relative;
     height: 400px;
@@ -466,19 +465,18 @@ body {
     flex: 1;
 }
 
-.card1{
+.card1 {
     text-align: center;
 }
 
-.card1 h3{
+.card1 h3 {
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-.card1 p{
+.card1 p {
     color: #d3542a;
     font-size: 30px;
-
 }
 
 .card2 {
@@ -490,18 +488,18 @@ body {
     border-radius: 5px;
 }
 
-.card2 h3{
+.card2 h3 {
     color: #d3542a;
     font-size: 30px;
     margin-left: 40px;
 }
 
-.card2 img{
+.card2 img {
     width: 40%;
     height: 300px;
 }
 
-.card2 li{
+.card2 li {
     padding: 10px;
     list-style-type: none;
 }
@@ -509,9 +507,9 @@ body {
 .socials-icons a {
     margin-right: 10px;
     text-decoration: none;
-    font-size: 15px; 
-    width: 70px; 
-    height: 60px; 
+    font-size: 15px;
+    width: 70px;
+    height: 60px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -520,7 +518,7 @@ body {
 }
 
 .socials-icons a i {
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 .fa {
@@ -530,7 +528,7 @@ body {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  }
+}
 
 .socials-icons a.facebook { background-color: #3b5998; }
 .socials-icons a.twitter { background-color: #1da1f2; }
@@ -539,7 +537,7 @@ body {
 .socials-icons a.pinterest { background-color: #bd081c; }
 
 .socials-icons a:hover {
-    opacity: 0.7; /* Slightly reduces opacity on hover */
+    opacity: 0.7;
 }
 
 .contact-form {
@@ -582,67 +580,87 @@ body {
 @media (max-width: 768px) {
     .content-section {
        display: grid;
-       grid-template-columns: repeat(1 , 1fr);
+       grid-template-columns: 1fr;
+       gap: 20px;
     }
 
-    .card, .contact-form {
-        margin: 0 0 20px 0;
+    .left-content, .right-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .navbar.active .menu {
+        display: flex;
     }
 }
 
 #map {
-            height: 400px;
-            width: 100%;
-        }
-        .address-card {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: white;
-            padding: 15px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 100;
-            border-radius: 8px;
-        }
-        .address-card h4 {
-            margin: 0;
-        }
-        .address-card .rating {
-            display: flex;
-            align-items: center;
-        }
-        .address-card .rating i {
-            color: #FFD700;
-        }
-        .address-card .rating span {
-            margin-left: 5px;
-        }
+    height: 400px;
+    width: 100%;
+}
 
-.social hr{
+.address-card {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-radius: 8px;
+}
+
+.address-card h4 {
+    margin: 0;
+}
+
+.address-card .rating {
+    display: flex;
+    align-items: center;
+}
+
+.address-card .rating i {
+    color: #FFD700;
+}
+
+.address-card .rating span {
+    margin-left: 5px;
+}
+
+.social hr {
     border: 1px solid gray;
     margin-left: 1px;
     width: 100px;
     margin-bottom: 2px;
 }
 
-.social p{
+.social p {
     text-align: left;
 }
 
-.social button{
-   margin-left: 10px;
-   height: 40px;
-   text-align: center;
-   margin-bottom: 20px;
+.social button {
+    margin-left: 10px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.social .fa{
+.social .fa {
     height: 10px;
 }
 
-
- /* footer CSS  */
- .footer {
+/* Footer Styles */
+.footer {
     display: flex;
     flex-wrap: wrap;
     background-color: #333;
@@ -670,8 +688,8 @@ body {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    min-width: 300px; /* Ensure a minimum width */
-    padding: 0 10px; /* Add padding for better spacing */
+    min-width: 300px;
+    padding: 0 10px;
 }
 
 .footer-column h2 {
@@ -689,7 +707,7 @@ body {
 }
 
 .social-icons a i {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 .social-icons .fa {
@@ -699,7 +717,7 @@ body {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  }
+}
 
 .social-icons a.facebook { background-color: #3b5998; }
 .social-icons a.twitter { background-color: #1da1f2; }
@@ -708,7 +726,7 @@ body {
 .social-icons a.pinterest { background-color: #bd081c; }
 
 .social-icons a:hover {
-    opacity: 0.7; /* Slightly reduces opacity on hover */
+    opacity: 0.7;
 }
 
 .footer-bottom {
@@ -725,17 +743,17 @@ body {
     padding-top: 20px;
 }
 
-.footer-bottom  span {
+.footer-bottom span {
     color: blue;
     text-decoration: underline;
 }
 
-.footer-bottom :hover {
+.footer-bottom:hover {
     cursor: pointer;
 }
 
 .social-icons i {
-    font-size: 24px; /* Adjust the icon size if necessary */
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {
@@ -858,26 +876,34 @@ body {
     transform: translateY(-50%) rotate(90deg) scale(1.1);
 }
  </style>
-     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const dropdownIcons = document.querySelectorAll(".dropdown-icon");
-    
-        dropdownIcons.forEach(icon => {
-            icon.addEventListener("click", function() {
-                const dropdownContent = this.nextElementSibling;
-                dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-            });
+
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const dropdownIcons = document.querySelectorAll(".dropdown-icon");
+
+    dropdownIcons.forEach(icon => {
+        icon.addEventListener("click", function() {
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
         });
     });
-    
-    document.querySelector('.hamburger').addEventListener('click', () => {
-    document.querySelector('.menu').classList.toggle('show');
 });
 
-document.querySelectorAll('.dropdown .dropbtn').forEach(dropbtn => {
-    dropbtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        dropbtn.nextElementSibling.classList.toggle('show');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.querySelector('.dropdown .dropbtn');
+    const dropdownContent = document.querySelector('.dropdown .dropdown-content');
+
+    dropdown.addEventListener('click', (event) => {
+        event.preventDefault();
+        dropdownContent.classList.toggle('show');
+    });
+
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
     });
 });
     
@@ -895,17 +921,17 @@ document.querySelectorAll('.dropdown .dropbtn').forEach(dropbtn => {
         });
     });
 
-    function initMap() {
-    var location = { lat: 27.7172, lng: 85.3240 }; // Coordinates for Kathmandu, Nepal
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: location
-    });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-}
+//     function initMap() {
+//     var location = { lat: 27.7172, lng: 85.3240 }; // Coordinates for Kathmandu, Nepal
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 15,
+//         center: location
+//     });
+//     var marker = new google.maps.Marker({
+//         position: location,
+//         map: map
+//     });
+// }
 
     document.addEventListener('DOMContentLoaded', function() {
         const messageIcon = document.querySelector('.message-icon');
