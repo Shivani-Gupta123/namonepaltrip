@@ -262,6 +262,13 @@
                     </div>
                 </div>
             </section>
+
+            <div class="social">
+                <hr>
+                <p>Share this:</p>
+                <button><i class="fa fa-facebook-f"></i> Facebook</button>
+                <button><i class="fa fa-twitter"></i> X</button>
+            </div>
         
 
         <footer class="footer">
@@ -309,6 +316,24 @@
         <a href="your-request-url" class="request-tag" target="_blank">
             REQUEST A CALL BACK
         </a>
+    </div>
+    <div id="requestForm" class="form-popup">
+        <div class="form-container">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            <h2>Request a Call Back</h2>
+            <form action="/submit-request" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 
     <div class="message-icon">
@@ -905,7 +930,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .footer-bottom  span {
@@ -1037,8 +1062,72 @@ body {
 }
 
 .request-tag:hover {
-    background-color: #0056b3;
     transform: translateY(-50%) rotate(90deg) scale(1.1);
+}
+
+/* Request Form Popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
 }
  </style>
      <script>
@@ -1141,6 +1230,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    function openForm() {
+    document.getElementById("requestForm").style.display = "flex";
+}
+
+function closeForm() {
+    document.getElementById("requestForm").style.display = "none";
+}
     </script>
 </body>
 </html>
