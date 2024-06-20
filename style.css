@@ -76,7 +76,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Adjust to space between items */
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 15px 20px;
@@ -85,11 +85,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo img {
-    height: 95px; 
+    width: 150px;
+    height: 96px; 
     margin-left: 60px;
 }
 
@@ -119,8 +120,26 @@ body {
 
 .navbar .menu li a:hover {
     color: #e46435;
-    border-radius: 4px;
+    border-radius: 3px;
 }
+
+.nav-link.active {
+    background-color: #d0532b;
+}
+
+.navbar .menu li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #d0532b;
+    transition: width .3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
 
 .navbar .menu li .dropdown-content {
     display: none;
@@ -214,20 +233,34 @@ body {
 
 .banner {
     position: relative;
-    height: 600px;
+    height: 500px; 
     overflow: hidden;
 }
+
+/* .banner-image {
+    width: 100%;
+   height: auto;
+   transform: scale(0);
+   opacity: 0;
+   animation: slide 15s infinite;
+} */
 
 .banner::before {
     content: '';
     position: absolute;
-    bottom: -20%;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/image1.jpg') center/cover no-repeat;
+    background: url('https://static.toiimg.com/photo/69789748.cms') center/cover no-repeat;
+    animation: slide 15s infinite;
 }
+/* @keyframes zoomout {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+} */
 
 .banner-content {
     position: absolute;
@@ -292,12 +325,12 @@ body {
         font-size: 20px;
     }
 }
-/* @keyframes slide {
-    0% { background: url('images/image1.jpg') center/cover no-repeat; }
-    33% { background: url('images/image1.jpg') center/cover no-repeat; }
-    66% { background: url('images/image1.jpg') center/cover no-repeat; }
-    100% { background: url('images/image1.jpg') center/cover no-repeat; }
-} */
+@keyframes slide {
+    0% { background: url('https://static.toiimg.com/photo/69789748.cms') center/cover no-repeat; }
+    33% { background: url('images/beautiful-landscape.jpg') center/cover no-repeat; }
+    66% { background: url('images/sunrise-deogyusan-mountains-covered-with-snow-winter-south-korea.jpg') center/cover no-repeat; }
+    100% { background: url('https://static.toiimg.com/photo/69789748.cms') center/cover no-repeat; }
+}
 
 .our-services-section {
     position: relative;
@@ -325,10 +358,16 @@ body {
 
 .sidebar {
     width: 25%;
+    height: 270px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar h3 {
@@ -337,6 +376,7 @@ body {
 
 .filter {
     margin-bottom: 20px;
+    position: sticky;
 }
 
 .filter-title {
@@ -375,6 +415,8 @@ body {
 
 .cards {
     flex: 1;
+    height: 300px;
+    overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -383,29 +425,43 @@ body {
     position: relative;
 }
 
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
 .card {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    /* overflow: hidden; */
+    /* transition: transform 0.3s ease; */
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.05);
     cursor: pointer;
-}
+} */
 
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    /* animation: zoomIn 3s forwards;  */
 }
 
-/* .card:hover img {
-    transform: scale(1);
-} */
+.card img:hover {
+    opacity: 0;
+    animation: zoomIn 2s forwards;
+    cursor: pointer; 
+    /* transform: scale(0.5); */
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
 
 .card-content {
     padding: 15px;
@@ -430,7 +486,10 @@ body {
 }
 
 .card-content button:hover {
-    background-color: #d0532b;
+    background-color: #f7f7f7;
+    color: #d35025;
+    border: 2px solid;
+    border-color: #d35025;
 }
 
 /* Responsive Styles  */
@@ -498,13 +557,18 @@ body {
 
 .tour-destination-section {
     position: relative;
-    height: 50vh;
-    overflow-y: auto; /* Enable scrolling within the section */
-    background-image: url('images/image1.jpg');
+    height: 300px;
+    overflow-y: auto; 
+    background-image: url('https://static.toiimg.com/photo/69789748.cms');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keep the background fixed while scrolling */
     padding: 100px 20px;
+}
+
+.background-image{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 /* .tour-destination-section::before {
@@ -549,22 +613,23 @@ body {
 
 .destination-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     border-radius: 10px 10px 0 0;
+    margin-bottom: -20px;
 }
 
 .destination-info {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .destination-info h3 {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .destination-info .button{
-    margin-left: 50px;
+   margin-left: 70px;
 }
 
 .destination-info a {
@@ -572,7 +637,6 @@ body {
     background-color: #e76b29;
     color: #fff;
     padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -581,6 +645,7 @@ body {
 .destination-info a:hover {
     background-color: #ebecee;
     color: #d0532b;
+    border: 2px solid;
     border-color: #d0532b;
 }
 
@@ -598,7 +663,7 @@ body {
     }
 
     .destination-info .button{
-        margin-left: 200px;
+        margin-left: 210px;
     }
 }
 
@@ -636,26 +701,27 @@ body {
 .package-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 30px;
-    gap: 40px;
+    margin: 70px;
+    gap: 20px;
 }
 
 .package-card {
     display: flex;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    width: 550px;
 }
 
 .package-card img {
     width: 300px;
-    height: 200px;
-    border-radius: 10px 10px 0 0;
+    height: 230px;
 }
 
 .package-info {
     padding: 20px;
+    text-align: left;
 }
 
 .package-info h3 {
@@ -674,7 +740,7 @@ body {
     width: 50%;
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -701,12 +767,16 @@ body {
 
     .package-card img{
         height: 300px;
-        width: 500px;
+        width: 450px;
     }
 
-    .package-card .button{
-        width: 20%;
-        margin-left: 200px;
+    .package-info{
+        text-align: center;
+    }
+
+    .button{
+        width: 25%;
+        margin-left: 150px;
     }
 }
 
@@ -731,7 +801,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 30px;
     background-color: #0E2F44FC;
 }
 
@@ -739,12 +809,6 @@ body {
     text-align: center;
     margin: 10px;
     flex: 1 1 200px;
-}
-
-.stats-item img {
-    max-width: 100%;
-    max-height: 150px; /* Adjust height as needed */
-    margin-bottom: 10px;
 }
 
 .stats-item h2 {
@@ -777,12 +841,12 @@ body {
     }
 
     .stats-item {
-        flex: 1 1 100%; /* Full width on smaller screens */
+        flex: 1 1 100%; 
         margin: 10px 0;
     }
 
     .stats-item img {
-        max-height: 100px; /* Adjust for smaller screens */
+        max-height: 100px; 
     }
 
     .stats-item h2 {
@@ -998,7 +1062,7 @@ body {
     flex-wrap: wrap;
     background-color: #333;
     color: #fff;
-    padding: 20px 20px;
+    padding: 20px 0px;
     text-align: start;
 }
 
@@ -1066,27 +1130,28 @@ body {
     background-color: #e46435;
     width: 100%;
     height: 70px;
-    margin: 0;
+    margin-top: -20px;
 }
 
 .footer-bottom p {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 25px;
 }
 
-.footer-bottom  span {
-    color: blue;
+.footer-bottom  a {
+    color: rgb(65, 65, 220);
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
-.footer-bottom :hover {
-    cursor: pointer;
-}
-
 .social-icons i {
-    font-size: 24px; /* Adjust the icon size if necessary */
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {
