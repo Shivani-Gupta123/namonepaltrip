@@ -63,6 +63,41 @@
             <h1>EXPLORE NEPAL TRIP</h1>
             <p>Holiday Packages & Funfilled Tours</p>
         </div>
+        <div>
+            <svg
+            class="waves"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto">
+            <defs>
+                <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+            </defs>
+            <g class="parallax">
+                <use 
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7)"/>
+                <use 
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"/>
+                <use 
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"/>
+                <use 
+                xlink:href="#gentle-wave"
+                x="48"
+                y="7"
+                fill="#fff"/>
+            </g>
+        </svg>
+        </div>
     </div>
 
     <!-- Our Services Section -->
@@ -72,7 +107,7 @@
         <div class="content-wrapper">
             <div class="sidebar">
                 <h3><i class="fas fa-filter"></i>  Filters</h3>
-                <div class="filter">
+                <div class="filter active">
                     <span class="filter-title">Filter by Location <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></span>
                     <div class="dropdown-content">
                         <label><input type="checkbox" class="filter-option" data-filter="location" value="Chitwan">Chitwan</label>
@@ -90,7 +125,7 @@
                         <label><input type="checkbox" class="filter-option" data-filter="location" value="Shillong">Shillong</label>
                     </div>
                 </div>
-                <div class="filter">
+                <div class="filter active">
                     <span class="filter-title">Filter by Feature <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></span>
                     <div class="dropdown-content">
                         <label><input type="checkbox" class="filter-option" data-filter="feature" value="All Applicable Government Taxes">All Applicable Government Taxes</label>
@@ -108,7 +143,7 @@
                         <label><input type="checkbox" class="filter-option" data-filter="feature" value="Toll, Permit, Parking, Driver Allowance">Toll, Permit, Parking, Driver Allowance</label>
                     </div>
                 </div>
-                <div class="filter">
+                <div class="filter active">
                     <span class="filter-title">Filter by Activity <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></span>
                     <div class="dropdown-content">
                         <label><input type="checkbox" class="filter-option" data-filter="activity" value="Beach">Beach</label>
@@ -118,7 +153,7 @@
                         <label><input type="checkbox" class="filter-option" data-filter="activity" value="Snow & Ice">Snow & Ice</label>
                     </div>
                 </div>
-                <div class="filter">
+                <div class="filter active">
                     <span class="filter-title">Specials <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></span>
                     <div class="dropdown-content">
                         <label><input type="checkbox" class="filter-option" data-filter="special" value="8 days Nepal tour">8 days Nepal tour</label>
@@ -251,6 +286,7 @@
                 </div>
             </div>
         </div>
+        <button id="load-more">Load More</button>
     </section>
 
     
@@ -258,7 +294,7 @@
     <section class="tour-destination-section">
         <div class="background-image">
         </div>
-        <div class="content">
+        <div class="contents">
             <h2>Tour Destinations Holiday Packages</h2>
             <div class="destination-cards">
                 <div class="destination-card">
@@ -398,7 +434,8 @@
     </section>
 
     <div class="banners">
-        <img src="images/image4.jpeg" alt="Banner Image" class="banners-image">
+        <div class="gradient"></div>
+        <img src="https://www.itournepal.com/images/pokhara-himalaya.jpg" alt="Banner Image" class="banners-image">
         <div class="banners-content">
             <p>Book Nepal Tour Packages : Grab Exciting Deals | Upto 50% Off</p>
             <div class="buttons">
@@ -407,7 +444,8 @@
             </div>
             <div class="video-card">
                 <p>Experience Nepal’s stunning natural beauty with our private & customized Tour Packages. Book your Nepal Tour. Visit Popular Places – Kathmandu, Pokhara, Chitwan & more.</p>
-                <iframe width="1120" height="515" src="https://youtu.be/MS-TkbL7n0w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1120" height="515" src="https://www.youtube.com/embed/jvN5hZzhFHM?si=hFwRA-NJz3EfVV7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <iframe width="1120" height="515" src="https://www.youtube.com/watch?v=DjcOSUVIrlA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
         </div>
     </div>
@@ -436,11 +474,11 @@
         <div class="footer-column">
             <h2>FOLLOW US</h2>
             <div class="social-icons">
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><div class="facebook" style="width: 40px; height: 40px; background-color: #3b5998;"><i style="font-size: larger;" class="fa fa-facebook-f"></i></div></a>
+                <a href="#"><div class="twitter" style="width: 40px; height: 40px; background-color: #1da1f2;"><i style="font-size: larger;" class="fa fa-twitter"></i></div></a>
+                <a href="#" ><div class="instagram" style="width: 40px; height: 40px; background-color: #e4405f;"><i style="font-size: larger;" class="fa fa-instagram"></i></div></i></a>
+                <a href="#" ><div class="youtube" style="width: 40px; height: 40px; background-color: #ff0000;"><i style="font-size: larger;" class="fa fa-youtube"></i></div></i></a>
+                <a href="#" ><div class="pinterest" style="width: 40px; height: 40px; background-color: #bd081c;"><i style="font-size: larger;" class="fa fa-pinterest"></i></div></a>
             </div>
         </div>
     </footer>
@@ -551,10 +589,11 @@ document.addEventListener('DOMContentLoaded',
     });
 
 
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const filterContainers = document.querySelectorAll('.filter');
     const filterOptions = document.querySelectorAll('.filter-option');
     const cards = document.querySelectorAll('.card');
+    const loadMoreButton = document.getElementById('load-more');
 
     filterContainers.forEach(filter => {
         const filterTrigger = filter.querySelector('.filter-title');
@@ -569,38 +608,110 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    function filterCards() {
-        const selectedFilters = {
-            location: getSelectedFilters('location'),
-            feature: getSelectedFilters('feature'),
-            activity: getSelectedFilters('activity'),
-            special: getSelectedFilters('special')
-        };
+    let visibleCards = 6;
 
-        cards.forEach(card => {
-            const cardLocation = card.dataset.location;
-            const cardFeature = card.dataset.feature;
-            const cardActivity = card.dataset.activity;
-            const cardSpecial = card.dataset.special;
+    const loadMoreCards = () => {
+        const hiddenCards = document.querySelectorAll('.card.hidden');
+        for (let i = 0; i < 6 && i < hiddenCards.length; i++) {
+            hiddenCards[i].classList.remove('hidden');
+        }
+        if (document.querySelectorAll('.card.hidden').length === 0) {
+            loadMoreButton.style.display = 'none';
+        }
+    };
 
-            const isLocationMatch = selectedFilters.location.length === 0 || selectedFilters.location.includes(cardLocation);
-            const isFeatureMatch = selectedFilters.feature.length === 0 || selectedFilters.feature.includes(cardFeature);
-            const isActivityMatch = selectedFilters.activity.length === 0 || selectedFilters.activity.includes(cardActivity);
-            const isSpecialMatch = selectedFilters.special.length === 0 || selectedFilters.special.includes(cardSpecial);
-
-            if (isLocationMatch && isFeatureMatch && isActivityMatch && isSpecialMatch) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
+    const filterCards = () => {
+        const selectedFilters = {};
+        filterOptions.forEach(option => {
+            if (option.checked) {
+                const filterType = option.dataset.filter;
+                if (!selectedFilters[filterType]) {
+                    selectedFilters[filterType] = [];
+                }
+                selectedFilters[filterType].push(option.value);
             }
         });
-    }
 
-    function getSelectedFilters(filterType) {
-        return Array.from(document.querySelectorAll(`.filter-option[data-filter="${filterType}"]:checked`))
-            .map(checkbox => checkbox.value);
-    }
+        cards.forEach(card => {
+            let isVisible = true;
+            for (let filterType in selectedFilters) {
+                const cardValue = card.dataset[filterType];
+                if (!selectedFilters[filterType].includes(cardValue)) {
+                    isVisible = false;
+                    break;
+                }
+            }
+            card.style.display = isVisible ? 'block' : 'none';
+        });
+
+        const visibleCards = document.querySelectorAll('.card:not(.hidden)');
+        if (visibleCards.length === 0) {
+            loadMoreButton.style.display = 'none';
+        } else {
+            loadMoreButton.style.display = 'block';
+        }
+    };
+
+    loadMoreButton.addEventListener('click', loadMoreCards);
+
+    filterCards(); // Initial filter call to apply the filters and show the correct cards
 });
+
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const filterContainers = document.querySelectorAll('.filter');
+//     const filterOptions = document.querySelectorAll('.filter-option');
+//     const cards = document.querySelectorAll('.card');
+
+//     filterContainers.forEach(filter => {
+//         const filterTrigger = filter.querySelector('.filter-title');
+//         filterTrigger.addEventListener('click', () => {
+//             filter.classList.toggle('active');
+//         });
+//     });
+
+//     filterOptions.forEach(option => {
+//         option.addEventListener('change', () => {
+//             filterCards();
+//         });
+    // });
+
+    
+
+//     function filterCards() {
+//         const selectedFilters = {
+//             location: getSelectedFilters('location'),
+//             feature: getSelectedFilters('feature'),
+//             activity: getSelectedFilters('activity'),
+//             special: getSelectedFilters('special')
+//         };
+
+//         cards.forEach(card => {
+//             const cardLocation = card.dataset.location;
+//             const cardFeature = card.dataset.feature;
+//             const cardActivity = card.dataset.activity;
+//             const cardSpecial = card.dataset.special;
+
+//             const isLocationMatch = selectedFilters.location.length === 0 || selectedFilters.location.includes(cardLocation);
+//             const isFeatureMatch = selectedFilters.feature.length === 0 || selectedFilters.feature.includes(cardFeature);
+//             const isActivityMatch = selectedFilters.activity.length === 0 || selectedFilters.activity.includes(cardActivity);
+//             const isSpecialMatch = selectedFilters.special.length === 0 || selectedFilters.special.includes(cardSpecial);
+
+//             if (isLocationMatch && isFeatureMatch && isActivityMatch && isSpecialMatch) {
+//                 card.style.display = 'block';
+//             } else {
+//                 card.style.display = 'none';
+//             }
+//         });
+//     }
+
+//     function getSelectedFilters(filterType) {
+//         return Array.from(document.querySelectorAll(`.filter-option[data-filter="${filterType}"]:checked`))
+//             .map(checkbox => checkbox.value);
+//     }
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
     const statsSection = document.getElementById('stats-section');
